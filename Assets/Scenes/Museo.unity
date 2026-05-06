@@ -750,7 +750,9 @@ GameObject:
   - component: {fileID: 546900455}
   - component: {fileID: 546900457}
   - component: {fileID: 546900456}
-  m_Layer: 5
+  - component: {fileID: 546900459}
+  - component: {fileID: 546900458}
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,15 +768,15 @@ RectTransform:
   m_GameObject: {fileID: 546900454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1889338910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 10}
+  m_AnchoredPosition: {x: 0, y: -1.71}
+  m_SizeDelta: {x: 25.24374, y: 18.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &546900456
 MonoBehaviour:
@@ -796,7 +798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f9818e818f0c0a94599974bfad1bf6a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -814,6 +816,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546900454}
   m_CullTransparentMesh: 1
+--- !u!114 &546900458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546900454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db866e3373805941a3f24055ca18057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  targetSceneName: CuadroBarco
+--- !u!65 &546900459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546900454}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 24.673504, y: 18.65202, z: 1}
+  m_Center: {x: -0.036166906, y: 0.16231775, z: 0}
 --- !u!1 &635125604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1507,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1205670077}
+  m_Mesh: {fileID: 1273321897}
 --- !u!33 &957147990
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -1785,6 +1821,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1070639662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070639664}
+  - component: {fileID: 1070639663}
+  - component: {fileID: 1070639665}
+  m_Layer: 8
+  m_Name: Cube (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &1070639663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070639662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.1157856, y: 3.7082975, z: 0.56094074}
+  m_Center: {x: 0.37314224, y: -0.03721273, z: -0.037849903}
+--- !u!4 &1070639664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070639662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.91, y: 3.948, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070639665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070639662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db866e3373805941a3f24055ca18057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PaintingInteractable
+  targetSceneName: CuadroBarco
 --- !u!43 &1205670077
 Mesh:
   m_ObjectHideFlags: 0
@@ -3969,7 +4072,7 @@ GameObject:
   - component: {fileID: 2132212671}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3998,10 +4101,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  interactRange: 3
-  interactMask:
-    serializedVersion: 2
-    m_Bits: 128
+  interactRange: 5
 --- !u!143 &2132212669
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4089,3 +4189,4 @@ SceneRoots:
   - {fileID: 957147994}
   - {fileID: 1889338910}
   - {fileID: 1245315771}
+  - {fileID: 1070639664}
